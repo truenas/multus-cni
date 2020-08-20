@@ -1,0 +1,798 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+
+Files: *
+Copyright: 2014-2018, The Kubernetes Authors
+License: Apache-2
+
+Files: vendor/k8s.io/api/*
+Copyright: 2015-2018, The Kubernetes Authors
+License: Apache-2
+
+Files: vendor/golang.org/*
+Copyright: purposes
+License: BSD-3-clause
+Comment: No explicit license found, using license(s) from:
+ vendor/golang.org/x/sys/LICENSE
+
+Files: vendor/k8s.io/apimachinery/*
+Copyright: 2014-2018, The Kubernetes Authors
+License: Apache-2
+
+Files: vendor/golang.org/x/sys/unix/affinity_linux.go
+       vendor/golang.org/x/sys/unix/aliases.go
+       vendor/golang.org/x/sys/unix/asm_aix_ppc64.s
+       vendor/golang.org/x/sys/unix/asm_darwin_386.s
+       vendor/golang.org/x/sys/unix/asm_darwin_amd64.s
+       vendor/golang.org/x/sys/unix/asm_darwin_arm.s
+       vendor/golang.org/x/sys/unix/asm_darwin_arm64.s
+       vendor/golang.org/x/sys/unix/asm_dragonfly_amd64.s
+       vendor/golang.org/x/sys/unix/asm_freebsd_386.s
+       vendor/golang.org/x/sys/unix/asm_freebsd_amd64.s
+       vendor/golang.org/x/sys/unix/asm_freebsd_arm.s
+       vendor/golang.org/x/sys/unix/asm_freebsd_arm64.s
+       vendor/golang.org/x/sys/unix/asm_linux_386.s
+       vendor/golang.org/x/sys/unix/asm_linux_amd64.s
+       vendor/golang.org/x/sys/unix/asm_linux_arm.s
+       vendor/golang.org/x/sys/unix/asm_linux_arm64.s
+       vendor/golang.org/x/sys/unix/asm_linux_mips64x.s
+       vendor/golang.org/x/sys/unix/asm_linux_mipsx.s
+       vendor/golang.org/x/sys/unix/asm_linux_ppc64x.s
+       vendor/golang.org/x/sys/unix/asm_linux_riscv64.s
+       vendor/golang.org/x/sys/unix/asm_linux_s390x.s
+       vendor/golang.org/x/sys/unix/asm_netbsd_386.s
+       vendor/golang.org/x/sys/unix/asm_netbsd_amd64.s
+       vendor/golang.org/x/sys/unix/asm_netbsd_arm.s
+       vendor/golang.org/x/sys/unix/asm_netbsd_arm64.s
+       vendor/golang.org/x/sys/unix/asm_openbsd_386.s
+       vendor/golang.org/x/sys/unix/asm_openbsd_amd64.s
+       vendor/golang.org/x/sys/unix/asm_openbsd_arm.s
+       vendor/golang.org/x/sys/unix/asm_openbsd_arm64.s
+       vendor/golang.org/x/sys/unix/asm_solaris_amd64.s
+       vendor/golang.org/x/sys/unix/bluetooth_linux.go
+       vendor/golang.org/x/sys/unix/cap_freebsd.go
+       vendor/golang.org/x/sys/unix/constants.go
+       vendor/golang.org/x/sys/unix/dev_aix_ppc.go
+       vendor/golang.org/x/sys/unix/dev_aix_ppc64.go
+       vendor/golang.org/x/sys/unix/dev_darwin.go
+       vendor/golang.org/x/sys/unix/dev_dragonfly.go
+       vendor/golang.org/x/sys/unix/dev_freebsd.go
+       vendor/golang.org/x/sys/unix/dev_linux.go
+       vendor/golang.org/x/sys/unix/dev_netbsd.go
+       vendor/golang.org/x/sys/unix/dev_openbsd.go
+       vendor/golang.org/x/sys/unix/dirent.go
+       vendor/golang.org/x/sys/unix/endian_big.go
+       vendor/golang.org/x/sys/unix/endian_little.go
+       vendor/golang.org/x/sys/unix/env_unix.go
+       vendor/golang.org/x/sys/unix/errors_freebsd_386.go
+       vendor/golang.org/x/sys/unix/errors_freebsd_amd64.go
+       vendor/golang.org/x/sys/unix/errors_freebsd_arm.go
+       vendor/golang.org/x/sys/unix/fcntl.go
+       vendor/golang.org/x/sys/unix/fcntl_darwin.go
+       vendor/golang.org/x/sys/unix/fcntl_linux_32bit.go
+       vendor/golang.org/x/sys/unix/gccgo.go
+       vendor/golang.org/x/sys/unix/gccgo_c.c
+       vendor/golang.org/x/sys/unix/gccgo_linux_amd64.go
+       vendor/golang.org/x/sys/unix/ioctl.go
+       vendor/golang.org/x/sys/unix/mkall.sh
+       vendor/golang.org/x/sys/unix/mkerrors.sh
+       vendor/golang.org/x/sys/unix/pagesize_unix.go
+       vendor/golang.org/x/sys/unix/pledge_openbsd.go
+       vendor/golang.org/x/sys/unix/race.go
+       vendor/golang.org/x/sys/unix/race0.go
+       vendor/golang.org/x/sys/unix/readdirent_getdents.go
+       vendor/golang.org/x/sys/unix/readdirent_getdirentries.go
+       vendor/golang.org/x/sys/unix/sockcmsg_linux.go
+       vendor/golang.org/x/sys/unix/sockcmsg_unix.go
+       vendor/golang.org/x/sys/unix/str.go
+       vendor/golang.org/x/sys/unix/syscall.go
+       vendor/golang.org/x/sys/unix/syscall_aix.go
+       vendor/golang.org/x/sys/unix/syscall_aix_ppc.go
+       vendor/golang.org/x/sys/unix/syscall_aix_ppc64.go
+       vendor/golang.org/x/sys/unix/syscall_bsd.go
+       vendor/golang.org/x/sys/unix/syscall_darwin.go
+       vendor/golang.org/x/sys/unix/syscall_darwin_386.go
+       vendor/golang.org/x/sys/unix/syscall_darwin_amd64.go
+       vendor/golang.org/x/sys/unix/syscall_darwin_arm.go
+       vendor/golang.org/x/sys/unix/syscall_darwin_arm64.go
+       vendor/golang.org/x/sys/unix/syscall_darwin_libSystem.go
+       vendor/golang.org/x/sys/unix/syscall_dragonfly.go
+       vendor/golang.org/x/sys/unix/syscall_dragonfly_amd64.go
+       vendor/golang.org/x/sys/unix/syscall_freebsd.go
+       vendor/golang.org/x/sys/unix/syscall_freebsd_386.go
+       vendor/golang.org/x/sys/unix/syscall_freebsd_amd64.go
+       vendor/golang.org/x/sys/unix/syscall_freebsd_arm.go
+       vendor/golang.org/x/sys/unix/syscall_freebsd_arm64.go
+       vendor/golang.org/x/sys/unix/syscall_linux.go
+       vendor/golang.org/x/sys/unix/syscall_linux_386.go
+       vendor/golang.org/x/sys/unix/syscall_linux_amd64.go
+       vendor/golang.org/x/sys/unix/syscall_linux_amd64_gc.go
+       vendor/golang.org/x/sys/unix/syscall_linux_arm.go
+       vendor/golang.org/x/sys/unix/syscall_linux_arm64.go
+       vendor/golang.org/x/sys/unix/syscall_linux_gc.go
+       vendor/golang.org/x/sys/unix/syscall_linux_gc_386.go
+       vendor/golang.org/x/sys/unix/syscall_linux_gccgo_386.go
+       vendor/golang.org/x/sys/unix/syscall_linux_gccgo_arm.go
+       vendor/golang.org/x/sys/unix/syscall_linux_mips64x.go
+       vendor/golang.org/x/sys/unix/syscall_linux_mipsx.go
+       vendor/golang.org/x/sys/unix/syscall_linux_ppc64x.go
+       vendor/golang.org/x/sys/unix/syscall_linux_riscv64.go
+       vendor/golang.org/x/sys/unix/syscall_linux_s390x.go
+       vendor/golang.org/x/sys/unix/syscall_linux_sparc64.go
+       vendor/golang.org/x/sys/unix/syscall_netbsd.go
+       vendor/golang.org/x/sys/unix/syscall_netbsd_386.go
+       vendor/golang.org/x/sys/unix/syscall_netbsd_amd64.go
+       vendor/golang.org/x/sys/unix/syscall_netbsd_arm.go
+       vendor/golang.org/x/sys/unix/syscall_netbsd_arm64.go
+       vendor/golang.org/x/sys/unix/syscall_openbsd.go
+       vendor/golang.org/x/sys/unix/syscall_openbsd_386.go
+       vendor/golang.org/x/sys/unix/syscall_openbsd_amd64.go
+       vendor/golang.org/x/sys/unix/syscall_openbsd_arm.go
+       vendor/golang.org/x/sys/unix/syscall_openbsd_arm64.go
+       vendor/golang.org/x/sys/unix/syscall_solaris.go
+       vendor/golang.org/x/sys/unix/syscall_solaris_amd64.go
+       vendor/golang.org/x/sys/unix/syscall_unix.go
+       vendor/golang.org/x/sys/unix/syscall_unix_gc.go
+       vendor/golang.org/x/sys/unix/syscall_unix_gc_ppc64x.go
+       vendor/golang.org/x/sys/unix/timestruct.go
+       vendor/golang.org/x/sys/unix/unveil_openbsd.go
+       vendor/golang.org/x/sys/unix/xattr_bsd.go
+       vendor/golang.org/x/sys/windows/aliases.go
+       vendor/golang.org/x/sys/windows/asm_windows_386.s
+       vendor/golang.org/x/sys/windows/asm_windows_amd64.s
+       vendor/golang.org/x/sys/windows/asm_windows_arm.s
+       vendor/golang.org/x/sys/windows/dll_windows.go
+       vendor/golang.org/x/sys/windows/env_windows.go
+       vendor/golang.org/x/sys/windows/eventlog.go
+       vendor/golang.org/x/sys/windows/exec_windows.go
+       vendor/golang.org/x/sys/windows/memory_windows.go
+       vendor/golang.org/x/sys/windows/mkerrors.bash
+       vendor/golang.org/x/sys/windows/mkknownfolderids.bash
+       vendor/golang.org/x/sys/windows/mksyscall.go
+       vendor/golang.org/x/sys/windows/race.go
+       vendor/golang.org/x/sys/windows/race0.go
+       vendor/golang.org/x/sys/windows/security_windows.go
+       vendor/golang.org/x/sys/windows/service.go
+       vendor/golang.org/x/sys/windows/str.go
+       vendor/golang.org/x/sys/windows/syscall.go
+       vendor/golang.org/x/sys/windows/syscall_windows.go
+       vendor/golang.org/x/sys/windows/types_windows.go
+       vendor/golang.org/x/sys/windows/types_windows_386.go
+       vendor/golang.org/x/sys/windows/types_windows_amd64.go
+       vendor/golang.org/x/sys/windows/types_windows_arm.go
+Copyright: 2009-2019, The Go Authors
+License: BSD
+
+Files: vendor/google.golang.org/*
+Copyright: 2014-2019, gRPC authors
+License: Apache-2
+
+Files: vendor/github.com/*
+License: Apache-2
+Comment: No explicit license found, using license(s) from:
+ vendor/github.com/vishvananda/netlink/LICENSE
+
+Files: vendor/github.com/onsi/*
+License: Expat
+Comment: No explicit license found, using license(s) from:
+ vendor/github.com/onsi/gomega/LICENSE
+
+Files: .github/*
+       .goreleaser.yml
+       .travis.yml
+       CODE_OF_CONDUCT.md
+       CONTRIBUTING.md
+       Dockerfile
+       Dockerfile.arm64
+       Dockerfile.openshift
+       Dockerfile.ppc64le
+       README.md
+       bin/*
+       build
+       checkpoint/*
+       doc/*
+       e2e/*
+       examples/*
+       go.mod
+       go.sum
+       images/*
+       kubeletclient/*
+       test.sh
+       vendor/modules.txt
+License: Apache-2
+Comment: No explicit license found, using license(s) from:
+ LICENSE
+
+Files: vendor/golang.org/x/text/*
+Copyright: 2011-2018, The Go Authors
+License: BSD
+
+Files: vendor/github.com/json-iterator/*
+License: Expat
+Comment: No explicit license found, using license(s) from:
+ vendor/github.com/json-iterator/go/LICENSE
+
+Files: vendor/github.com/onsi/ginkgo/*
+License: Expat
+Comment: No explicit license found, using license(s) from:
+ vendor/github.com/onsi/ginkgo/LICENSE
+
+Files: vendor/golang.org/x/net/*
+Copyright: 2010-2018, The Go Authors
+License: BSD
+
+Files: vendor/github.com/spf13/*
+License: BSD-3-clause
+Comment: No explicit license found, using license(s) from:
+ vendor/github.com/spf13/pflag/LICENSE
+
+Files: vendor/github.com/modern-go/*
+License: Apache-2
+Comment: No explicit license found, using license(s) from:
+ vendor/github.com/modern-go/reflect2/LICENSE
+
+Files: vendor/google.golang.org/appengine/*
+Copyright: 2011-2015, Google Inc
+           2018, Google LLC
+License: Apache-2
+Comment: No explicit license found, using license(s) from:
+ vendor/google.golang.org/appengine/LICENSE
+
+Files: vendor/github.com/golang/*
+Copyright: 2008, Google Inc
+           2010-2018, The Go Authors
+License: BSD-3-clause
+
+Files: vendor/golang.org/x/text/AUTHORS
+       vendor/golang.org/x/text/CONTRIBUTORS
+       vendor/golang.org/x/text/PATENTS
+       vendor/golang.org/x/text/encoding/charmap/tables.go
+       vendor/golang.org/x/text/encoding/htmlindex/tables.go
+       vendor/golang.org/x/text/encoding/internal/identifier/mib.go
+       vendor/golang.org/x/text/encoding/japanese/tables.go
+       vendor/golang.org/x/text/encoding/korean/tables.go
+       vendor/golang.org/x/text/encoding/simplifiedchinese/tables.go
+       vendor/golang.org/x/text/encoding/traditionalchinese/tables.go
+       vendor/golang.org/x/text/internal/language/common.go
+       vendor/golang.org/x/text/internal/language/compact/parents.go
+       vendor/golang.org/x/text/internal/language/compact/tables.go
+       vendor/golang.org/x/text/internal/language/tables.go
+       vendor/golang.org/x/text/language/tables.go
+       vendor/golang.org/x/text/unicode/bidi/tables10.0.0.go
+       vendor/golang.org/x/text/unicode/bidi/tables11.0.0.go
+       vendor/golang.org/x/text/unicode/bidi/tables12.0.0.go
+       vendor/golang.org/x/text/unicode/bidi/tables9.0.0.go
+       vendor/golang.org/x/text/unicode/bidi/trieval.go
+       vendor/golang.org/x/text/unicode/norm/tables10.0.0.go
+       vendor/golang.org/x/text/unicode/norm/tables11.0.0.go
+       vendor/golang.org/x/text/unicode/norm/tables12.0.0.go
+       vendor/golang.org/x/text/unicode/norm/tables9.0.0.go
+Copyright: purposes
+License: BSD-3-clause
+Comment: No explicit license found, using license(s) from:
+ vendor/golang.org/x/text/LICENSE
+
+Files: vendor/github.com/gogo/*
+Copyright: 2010-2018, The Go Authors
+           2013, The GoGo Authors
+License: BSD-3-clause
+
+Files: vendor/github.com/gogo/protobuf/gogoproto/*
+       vendor/github.com/gogo/protobuf/proto/custom_gogo.go
+       vendor/github.com/gogo/protobuf/proto/duration_gogo.go
+       vendor/github.com/gogo/protobuf/proto/encode_gogo.go
+       vendor/github.com/gogo/protobuf/proto/extensions_gogo.go
+       vendor/github.com/gogo/protobuf/proto/lib_gogo.go
+       vendor/github.com/gogo/protobuf/proto/pointer_reflect_gogo.go
+       vendor/github.com/gogo/protobuf/proto/pointer_unsafe_gogo.go
+       vendor/github.com/gogo/protobuf/proto/properties_gogo.go
+       vendor/github.com/gogo/protobuf/proto/skip_gogo.go
+       vendor/github.com/gogo/protobuf/proto/table_marshal_gogo.go
+       vendor/github.com/gogo/protobuf/proto/table_unmarshal_gogo.go
+       vendor/github.com/gogo/protobuf/proto/text_gogo.go
+       vendor/github.com/gogo/protobuf/proto/timestamp_gogo.go
+       vendor/github.com/gogo/protobuf/proto/wrappers.go
+       vendor/github.com/gogo/protobuf/proto/wrappers_gogo.go
+       vendor/github.com/gogo/protobuf/protoc-gen-gogo/descriptor/helper.go
+       vendor/github.com/gogo/protobuf/sortkeys/*
+Copyright: 2013-2018, The GoGo Authors
+License: BSD-2-clause
+
+Files: vendor/github.com/hpcloud/*
+Copyright: 2013, ActiveState Software Inc
+           2015, HPE Software Inc
+License: Expat
+Comment: No explicit license found, using license(s) from:
+ vendor/github.com/hpcloud/tail/LICENSE.txt
+
+Files: vendor/github.com/containernetworking/*
+Copyright: 2014-2016, CNI authors
+License: Apache-2
+
+Files: vendor/github.com/k8snetworkplumbingwg/*
+Copyright: 2019, Kubernetes Network Plumbing Working Group
+           2020, The Kubernetes Authors
+License: Apache-2
+
+Files: vendor/gopkg.in/*
+License: Apache-2 or Expat
+Comment: No explicit license found, using license(s) from:
+ vendor/gopkg.in/yaml.v2/LICENSE
+ vendor/gopkg.in/yaml.v2/LICENSE.libyaml
+
+Files: vendor/github.com/Microsoft/*
+License: Expat
+Comment: No explicit license found, using license(s) from:
+ vendor/github.com/Microsoft/go-winio/LICENSE
+
+Files: LICENSE
+       checkpoint/checkpoint.go
+       k8sclient/*
+       logging/*
+       multus/*
+       netutils/*
+       testing/*
+       types/*
+Copyright: 2017-2018, Intel Corporation
+           2019, Multus Authors
+License: Apache-2
+
+Files: vendor/golang.org/x/net/AUTHORS
+       vendor/golang.org/x/net/CONTRIBUTORS
+       vendor/golang.org/x/net/PATENTS
+       vendor/golang.org/x/net/html/atom/table.go
+       vendor/golang.org/x/net/http2/Dockerfile
+       vendor/golang.org/x/net/http2/Makefile
+       vendor/golang.org/x/net/http2/README
+       vendor/golang.org/x/net/idna/tables10.0.0.go
+       vendor/golang.org/x/net/idna/tables11.0.0.go
+       vendor/golang.org/x/net/idna/tables12.00.go
+       vendor/golang.org/x/net/idna/tables9.0.0.go
+       vendor/golang.org/x/net/idna/trieval.go
+Copyright: purposes
+License: BSD-3-clause
+Comment: No explicit license found, using license(s) from:
+ vendor/golang.org/x/net/LICENSE
+
+Files: vendor/github.com/googleapis/*
+Copyright: 2017, Google Inc
+License: Apache-2
+
+Files: vendor/google.golang.org/grpc/.travis.yml
+       vendor/google.golang.org/grpc/AUTHORS
+       vendor/google.golang.org/grpc/CONTRIBUTING.md
+       vendor/google.golang.org/grpc/Makefile
+       vendor/google.golang.org/grpc/README.md
+       vendor/google.golang.org/grpc/binarylog/*
+       vendor/google.golang.org/grpc/codegen.sh
+       vendor/google.golang.org/grpc/go.mod
+       vendor/google.golang.org/grpc/go.sum
+       vendor/google.golang.org/grpc/install_gae.sh
+       vendor/google.golang.org/grpc/vet.sh
+Copyright: 0-9]\{4,\} gRPC authors\)\|DO NOT EDIT" 2>&1 | fail_on_output
+License: Apache-2
+Comment: No explicit license found, using license(s) from:
+ vendor/google.golang.org/grpc/LICENSE
+
+Files: vendor/k8s.io/kubernetes/*
+Copyright: 2015-2018, The Kubernetes Authors
+License: Apache-2
+
+Files: vendor/github.com/davecgh/*
+Copyright: 2012-2016, Dave Collins <dave@davec.name>
+License: ISC
+
+Files: vendor/k8s.io/client-go/pkg/apis/clientauthentication/OWNERS
+       vendor/k8s.io/client-go/pkg/version/.gitattributes
+       vendor/k8s.io/client-go/rest/OWNERS
+       vendor/k8s.io/client-go/tools/auth/OWNERS
+       vendor/k8s.io/client-go/tools/metrics/OWNERS
+       vendor/k8s.io/client-go/tools/record/OWNERS
+       vendor/k8s.io/client-go/transport/OWNERS
+       vendor/k8s.io/client-go/util/cert/OWNERS
+       vendor/k8s.io/client-go/util/retry/OWNERS
+License: Apache-2
+Comment: No explicit license found, using license(s) from:
+ vendor/k8s.io/client-go/LICENSE
+
+Files: vendor/k8s.io/klog/*
+License: Apache-2
+Comment: No explicit license found, using license(s) from:
+ vendor/k8s.io/klog/LICENSE
+
+Files: vendor/sigs.k8s.io/*
+License: BSD-3-clause or Expat
+Comment: No explicit license found, using license(s) from:
+ vendor/sigs.k8s.io/yaml/LICENSE
+
+Files: vendor/gopkg.in/fsnotify.v1/*
+Copyright: 2010-2015, The Go Authors
+License: BSD
+
+Files: vendor/golang.org/x/crypto/*
+Copyright: 2011-2018, The Go Authors
+License: BSD
+
+Files: vendor/golang.org/x/oauth2/*
+Copyright: 2014-2018, The Go Authors
+License: BSD
+
+Files: vendor/github.com/modern-go/concurrent/*
+License: Apache-2
+Comment: No explicit license found, using license(s) from:
+ vendor/github.com/modern-go/concurrent/LICENSE
+
+Files: vendor/k8s.io/apimachinery/pkg/api/errors/OWNERS
+       vendor/k8s.io/apimachinery/pkg/api/meta/OWNERS
+       vendor/k8s.io/apimachinery/pkg/api/resource/OWNERS
+       vendor/k8s.io/apimachinery/pkg/apis/meta/v1/OWNERS
+       vendor/k8s.io/apimachinery/pkg/util/mergepatch/OWNERS
+       vendor/k8s.io/apimachinery/pkg/util/strategicpatch/OWNERS
+       vendor/k8s.io/apimachinery/third_party/*
+License: Apache-2
+Comment: No explicit license found, using license(s) from:
+ vendor/k8s.io/apimachinery/LICENSE
+
+Files: vendor/github.com/onsi/ginkgo/reporters/stenographer/support/*
+License: Expat
+Comment: No explicit license found, using license(s) from:
+ vendor/github.com/onsi/ginkgo/reporters/stenographer/support/go-isatty/LICENSE
+
+Files: vendor/github.com/googleapis/gnostic/OpenAPIv2/OpenAPIv2.pb.go
+       vendor/github.com/googleapis/gnostic/OpenAPIv2/README.md
+       vendor/github.com/googleapis/gnostic/OpenAPIv2/openapi-2.0.json
+       vendor/github.com/googleapis/gnostic/compiler/README.md
+       vendor/github.com/googleapis/gnostic/extensions/COMPILE-EXTENSION.sh
+       vendor/github.com/googleapis/gnostic/extensions/README.md
+       vendor/github.com/googleapis/gnostic/extensions/extension.pb.go
+License: Apache-2
+Comment: No explicit license found, using license(s) from:
+ vendor/github.com/googleapis/gnostic/LICENSE
+
+Files: vendor/github.com/gogo/protobuf/AUTHORS
+       vendor/github.com/gogo/protobuf/CONTRIBUTORS
+       vendor/github.com/gogo/protobuf/gogoproto/gogo.pb.go
+       vendor/github.com/gogo/protobuf/gogoproto/gogo.pb.golden
+       vendor/github.com/gogo/protobuf/protoc-gen-gogo/descriptor/descriptor.pb.go
+       vendor/github.com/gogo/protobuf/protoc-gen-gogo/descriptor/descriptor_gostring.gen.go
+Copyright: purposes
+License: BSD-3-clause
+Comment: No explicit license found, using license(s) from:
+ vendor/github.com/gogo/protobuf/LICENSE
+
+Files: vendor/github.com/containernetworking/plugins/*
+Copyright: 2015-2018, CNI authors
+License: Apache-2
+
+Files: vendor/gopkg.in/fsnotify.v1/.editorconfig
+       vendor/gopkg.in/fsnotify.v1/.travis.yml
+       vendor/gopkg.in/fsnotify.v1/AUTHORS
+       vendor/gopkg.in/fsnotify.v1/CHANGELOG.md
+       vendor/gopkg.in/fsnotify.v1/CONTRIBUTING.md
+       vendor/gopkg.in/fsnotify.v1/README.md
+License: BSD-3-clause
+Comment: No explicit license found, using license(s) from:
+ vendor/gopkg.in/fsnotify.v1/LICENSE
+
+Files: vendor/golang.org/x/oauth2/.travis.yml
+       vendor/golang.org/x/oauth2/AUTHORS
+       vendor/golang.org/x/oauth2/CONTRIBUTING.md
+       vendor/golang.org/x/oauth2/CONTRIBUTORS
+       vendor/golang.org/x/oauth2/README.md
+Copyright: purposes
+License: BSD-3-clause
+Comment: No explicit license found, using license(s) from:
+ vendor/golang.org/x/oauth2/LICENSE
+
+Files: vendor/github.com/golang/protobuf/AUTHORS
+       vendor/github.com/golang/protobuf/CONTRIBUTORS
+       vendor/github.com/golang/protobuf/ptypes/any/any.pb.go
+       vendor/github.com/golang/protobuf/ptypes/duration/duration.pb.go
+       vendor/github.com/golang/protobuf/ptypes/timestamp/timestamp.pb.go
+Copyright: purposes
+License: BSD-3-clause
+Comment: No explicit license found, using license(s) from:
+ vendor/github.com/golang/protobuf/LICENSE
+
+Files: vendor/gopkg.in/natefinch/*
+License: Expat
+Comment: No explicit license found, using license(s) from:
+ vendor/gopkg.in/natefinch/lumberjack.v2/LICENSE
+
+Files: vendor/github.com/pkg/*
+License: BSD-2-clause
+Comment: No explicit license found, using license(s) from:
+ vendor/github.com/pkg/errors/LICENSE
+
+Files: vendor/github.com/imdario/*
+Copyright: 2013-2014, Dario Castañé
+           2009, The Go Authors
+License: BSD
+
+Files: vendor/k8s.io/kube-openapi/*
+Copyright: 2017, The Kubernetes Authors
+License: Apache-2
+
+Files: vendor/github.com/google/*
+Copyright: assignment**, it simply gives
+License: Apache-2
+Comment: No explicit license found, using license(s) from:
+ vendor/github.com/google/gofuzz/LICENSE
+
+Files: vendor/github.com/gregjones/*
+Copyright: goauth2 authors: https://code.google.com/p/goauth2
+License: Expat
+Comment: No explicit license found, using license(s) from:
+ vendor/github.com/gregjones/httpcache/LICENSE.txt
+
+Files: vendor/k8s.io/kubernetes/pkg/kubelet/apis/podresources/BUILD
+       vendor/k8s.io/kubernetes/pkg/kubelet/apis/podresources/v1alpha1/BUILD
+       vendor/k8s.io/kubernetes/pkg/kubelet/apis/podresources/v1alpha1/api.proto
+       vendor/k8s.io/kubernetes/pkg/kubelet/util/BUILD
+License: Apache-2
+Comment: No explicit license found, using license(s) from:
+ vendor/k8s.io/kubernetes/LICENSE
+
+Files: vendor/github.com/onsi/ginkgo/reporters/stenographer/support/go-colorable/*
+License: Expat
+Comment: No explicit license found, using license(s) from:
+ vendor/github.com/onsi/ginkgo/reporters/stenographer/support/go-colorable/LICENSE
+
+Files: vendor/github.com/k8snetworkplumbingwg/network-attachment-definition-client/pkg/apis/k8s.cni.cncf.io/register.go
+       vendor/github.com/k8snetworkplumbingwg/network-attachment-definition-client/pkg/apis/k8s.cni.cncf.io/v1/doc.go
+       vendor/github.com/k8snetworkplumbingwg/network-attachment-definition-client/pkg/apis/k8s.cni.cncf.io/v1/register.go
+       vendor/github.com/k8snetworkplumbingwg/network-attachment-definition-client/pkg/apis/k8s.cni.cncf.io/v1/types.go
+License: Apache-2
+Comment: No explicit license found, using license(s) from:
+ vendor/github.com/k8snetworkplumbingwg/network-attachment-definition-client/LICENSE
+
+Files: vendor/github.com/peterbourgon/*
+License: Expat
+Comment: No explicit license found, using license(s) from:
+ vendor/github.com/peterbourgon/diskv/LICENSE
+
+Files: vendor/github.com/evanphx/*
+License: BSD-3-clause
+Comment: No explicit license found, using license(s) from:
+ vendor/github.com/evanphx/json-patch/LICENSE
+
+Files: vendor/github.com/vishvananda/netns/*
+License: Apache-2
+Comment: No explicit license found, using license(s) from:
+ vendor/github.com/vishvananda/netns/LICENSE
+
+Files: vendor/k8s.io/klog/LICENSE
+       vendor/k8s.io/klog/klog.go
+       vendor/k8s.io/klog/klog_file.go
+Copyright: 2013, Google Inc
+License: Apache-2
+
+Files: vendor/golang.org/x/crypto/AUTHORS
+       vendor/golang.org/x/crypto/CONTRIBUTORS
+       vendor/golang.org/x/crypto/PATENTS
+Copyright: purposes
+License: BSD-3-clause
+Comment: No explicit license found, using license(s) from:
+ vendor/golang.org/x/crypto/LICENSE
+
+Files: vendor/golang.org/x/time/*
+Copyright: purposes
+License: BSD-3-clause
+Comment: No explicit license found, using license(s) from:
+ vendor/golang.org/x/time/LICENSE
+
+Files: vendor/github.com/google/gofuzz/LICENSE
+       vendor/github.com/google/gofuzz/doc.go
+       vendor/github.com/google/gofuzz/fuzz.go
+Copyright: 2014, Google Inc
+License: Apache-2
+
+Files: vendor/github.com/imdario/mergo/.travis.yml
+       vendor/github.com/imdario/mergo/CODE_OF_CONDUCT.md
+       vendor/github.com/imdario/mergo/README.md
+License: BSD-3-clause
+Comment: No explicit license found, using license(s) from:
+ vendor/github.com/imdario/mergo/LICENSE
+
+Files: vendor/github.com/hpcloud/tail/LICENSE.txt
+       vendor/github.com/hpcloud/tail/ratelimiter/Licence
+Copyright: 2013, 99designs
+           2014, ActiveState
+           2015, Hewlett Packard Enterprise Development LP
+License: Expat
+
+Files: vendor/k8s.io/apimachinery/third_party/forked/golang/json/fields.go
+       vendor/k8s.io/apimachinery/third_party/forked/golang/reflect/*
+Copyright: 2009-2013, The Go Authors
+License: BSD
+
+Files: vendor/gopkg.in/yaml.v2/LICENSE
+       vendor/gopkg.in/yaml.v2/NOTICE
+Copyright: 2011-2016, Canonical Ltd
+License: Apache-2
+
+Files: vendor/gopkg.in/tomb.v1/*
+Copyright: 2010-2011, Gustavo Niemeyer <gustavo@niemeyer.net>
+License: BSD-3-clause
+
+Files: vendor/github.com/spf13/pflag/flag.go
+       vendor/github.com/spf13/pflag/golangflag.go
+Copyright: 2009, The Go Authors
+License: BSD
+
+Files: vendor/github.com/google/btree/*
+Copyright: 2014, Google Inc
+License: Apache-2
+
+Files: vendor/github.com/golang/groupcache/*
+Copyright: 2013, Google Inc
+License: Apache-2
+
+Files: vendor/gopkg.in/inf.v0/*
+License: BSD-3-clause
+Comment: No explicit license found, using license(s) from:
+ vendor/gopkg.in/inf.v0/LICENSE
+
+Files: vendor/github.com/google/btree/.travis.yml
+       vendor/github.com/google/btree/README.md
+License: Apache-2
+Comment: No explicit license found, using license(s) from:
+ vendor/github.com/google/btree/LICENSE
+
+Files: vendor/gopkg.in/fsnotify.v1/LICENSE
+Copyright: 2012, The Go Authors
+           2012, fsnotify Authors
+License: BSD-3-clause
+
+Files: vendor/gopkg.in/inf.v0/LICENSE
+Copyright: 2012, Péter Surányi. Portions
+           2009, The Go
+License: BSD-3-clause
+
+Files: vendor/sigs.k8s.io/yaml/LICENSE
+Copyright: 2014, Sam Ghods
+           2012, The Go Authors
+License: BSD-3-clause or Expat
+
+Files: vendor/github.com/imdario/mergo/LICENSE
+Copyright: 2013, Dario Castañé
+           2012, The Go Authors
+License: BSD-3-clause
+
+Files: vendor/github.com/spf13/pflag/LICENSE
+Copyright: 2012, Alex Ogier
+           2012, The Go Authors
+License: BSD-3-clause
+
+Files: vendor/github.com/vishvananda/netns/LICENSE
+Copyright: 2014, Docker, Inc
+           2014, Vishvananda Ishaya
+License: Apache-2
+
+Files: vendor/github.com/vishvananda/netlink/LICENSE
+Copyright: 2014, Docker, Inc
+           2014, Vishvananda Ishaya
+License: Apache-2
+
+Files: vendor/gopkg.in/yaml.v2/LICENSE.libyaml
+Copyright: 2006, Kirill Simonov
+License: Expat
+
+Files: vendor/gopkg.in/natefinch/lumberjack.v2/LICENSE
+Copyright: 2014, Nate Finch
+License: Expat
+
+Files: vendor/golang.org/x/crypto/LICENSE
+Copyright: 2009, The Go Authors
+License: BSD-3-clause
+
+Files: vendor/golang.org/x/text/LICENSE
+Copyright: 2009, The Go Authors
+License: BSD-3-clause
+
+Files: vendor/golang.org/x/sys/LICENSE
+Copyright: 2009, The Go Authors
+License: BSD-3-clause
+
+Files: vendor/golang.org/x/time/rate/*
+Copyright: 2015, The Go Authors
+License: BSD
+
+Files: vendor/golang.org/x/time/LICENSE
+Copyright: 2009, The Go Authors
+License: BSD-3-clause
+
+Files: vendor/golang.org/x/net/LICENSE
+Copyright: 2009, The Go Authors
+License: BSD-3-clause
+
+Files: vendor/golang.org/x/oauth2/LICENSE
+Copyright: 2009, The Go Authors
+License: BSD-3-clause
+
+Files: vendor/sigs.k8s.io/yaml/fields.go
+Copyright: 2013, The Go Authors
+License: BSD
+
+Files: vendor/github.com/onsi/ginkgo/reporters/stenographer/support/go-isatty/LICENSE
+Copyright: Yasuhiro MATSUMOTO <mattn.jp@gmail.com>
+License: Expat
+
+Files: vendor/github.com/onsi/ginkgo/reporters/stenographer/support/go-colorable/LICENSE
+Copyright: 2016, Yasuhiro Matsumoto
+License: Expat
+
+Files: vendor/github.com/onsi/ginkgo/LICENSE
+Copyright: 2013-2014, Onsi Fakhouri
+License: Expat
+
+Files: vendor/github.com/onsi/gomega/LICENSE
+Copyright: 2013-2014, Onsi Fakhouri
+License: Expat
+
+Files: vendor/github.com/json-iterator/go/LICENSE
+Copyright: 2016, json-iterator
+License: Expat
+
+Files: vendor/github.com/pkg/errors/LICENSE
+Copyright: 2015, Dave Cheney <dave@cheney.net>
+License: BSD-2-clause
+
+Files: vendor/github.com/peterbourgon/diskv/LICENSE
+Copyright: 2011-2012, Peter Bourgon
+License: Expat
+
+Files: vendor/github.com/evanphx/json-patch/LICENSE
+Copyright: 2014, Evan Phoenix
+License: BSD-3-clause
+
+Files: vendor/github.com/Microsoft/go-winio/LICENSE
+Copyright: 2015, Microsoft
+License: Expat
+
+Files: vendor/github.com/gregjones/httpcache/LICENSE.txt
+Copyright: 2012, Greg Jones <greg.jones@gmail.com>
+License: Expat
+
+Files: vendor/k8s.io/kube-openapi/pkg/util/proto/OWNERS
+License: Apache-2
+Comment: No explicit license found, using license(s) from:
+ vendor/k8s.io/kube-openapi/LICENSE
+
+Files: vendor/gopkg.in/tomb.v1/README.md
+License: BSD-3-clause
+Comment: No explicit license found, using license(s) from:
+ vendor/gopkg.in/tomb.v1/LICENSE
+
+Files: vendor/github.com/containernetworking/plugins/pkg/ns/README.md
+License: Apache-2
+Comment: No explicit license found, using license(s) from:
+ vendor/github.com/containernetworking/plugins/LICENSE
+
+Files: vendor/github.com/modern-go/reflect2/LICENSE
+License: Apache-2
+
+Files: vendor/github.com/modern-go/concurrent/LICENSE
+License: Apache-2
+
+Files: vendor/google.golang.org/appengine/LICENSE
+License: Apache-2
+
+Files: vendor/google.golang.org/genproto/*
+License: Apache-2
+Comment: No explicit license found, using license(s) from:
+ vendor/google.golang.org/genproto/LICENSE
+
+Files: vendor/google.golang.org/genproto/LICENSE
+License: Apache-2
+
+License: Apache-2
+
+License: BSD
+
+License: BSD-2-clause
+
+License: BSD-3-clause
+
+License: Expat
+
+License: ISC
