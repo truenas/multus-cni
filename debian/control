@@ -1,0 +1,14 @@
+Source: multus-cni
+Section: admin
+Priority: optional
+Maintainer: Waqar Ahmed <waqar@ixsystems.com>
+Build-Depends:	golang,
+		debhelper-compat (= 12)
+Standards-Version: 4.4.0
+Homepage: http://www.truenas.com
+
+Package: multus-cni
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Multus CNI package
+ This package is supposed to provide binary for multus CNI package.
